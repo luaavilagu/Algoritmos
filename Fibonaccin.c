@@ -3,12 +3,12 @@
 //int fibo(int n);
 
 // user-defined function to check prime number
-int fibo(unsigned long int n){
+long long int fibo(long long int n){
 	
-    unsigned long int previous = 1;
-    unsigned long int current = 1;
-    unsigned long int next = 1;
-    unsigned long int i = 3;
+    long long int previous = 1;
+    long long int current = 1;
+    long long int next = 1;
+    long long int i = 3;
     for (i; i <= n; ++i){
     	
         next = current + previous;
@@ -22,14 +22,12 @@ int fibo(unsigned long int n){
 int main(){
 	
 	
-    //int overflow n : 2140000000 
-    //long int overflow n : 1999999999
-	//long long int overflow n : 2140000000000000000
-	//unsigned long long int n : 9090000000000000000
-	//unsigned long int n : 4240000000;
-	unsigned long int n = 4240000000;
-
-        printf("%d", fibo(n) );
+    //int overflow n : 46 
+    //long int overflow n : 48
+	//long long int overflow n : 5680
+	long long int n = 5680;
+	
+        printf("%lld", fibo(n) );
         
     return 0;
 
