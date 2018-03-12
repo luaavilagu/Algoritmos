@@ -9,11 +9,11 @@ using namespace std;
 /* 
  * Iterative function to find Fibonacci Numbers 
  */
-ll fibo_iter(int n)
+ll fibo_iter(long long int n)
 {
-    int previous = 1;
-    int current = 1;
-    int next = 1;
+    long long int previous = 1;
+    long long int current = 1;
+    long long int next = 1;
     for (int i = 3; i <= n; ++i) 
     {
         next = current + previous;
@@ -27,11 +27,11 @@ ll fibo_iter(int n)
  */
 int main()
 {
-    //int overflow n : 2140000000 
-    //long int overflow n : 1999999999
-	//long long int overflow n : 9150000000000000000
+    //int overflow n : 45 
+    //long int overflow n : 46
+	//long long int overflow n : 134
     
-    int n = 2140000000;
+    long long int n = 134;
 	    //if (n == 0)
         //    break;
         cout<<fibo_iter(n)<<endl;
